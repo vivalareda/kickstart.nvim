@@ -11,13 +11,13 @@ return {
   },
   cmd = 'Neotree',
   keys = {
-    { '\\', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
+    { '<C-n>', ':Neotree toggle<CR>', desc = 'Toggle NeoTree', silent = true },
   },
   opts = {
     filesystem = {
       window = {
         mappings = {
-          ['\\'] = 'close_window',
+          ['<CR>'] = 'open', -- Press Enter to open files or folders
         },
       },
     },
